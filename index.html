@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- Make the webpage adjust for phones and tablets-->
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title displayed on tab-->
+    <title>DU Bootcamp Weather Review</title>
+
+    <!-- Define Bootstrap Reference-->
+    <link rel="stylesheet" href="Resources/bootstrap.min.css" media="screen>"
+
+    <link rel="stylesheet" href="Resources/style.css" media="screen"
+
+</head>
+
+<body style="background-color: rgb(153, 149, 145);">
+
+    <!-- Create a navigation bar-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid navbar-custom">
+
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Site Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <div class="col-xs-9 phone nav">
+                    </div>
+                </div>
+
+                <!-- Group the links-->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                   <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="False">Plots <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Resources/temperature.html">Max Temperature</a></li>
+                                <li><a href="Resources/humidity.html">Humidity</a></li>
+                                <li><a href="Resources/cloudiness.html">Cloudiness</a></li>
+                                <li><a href="Resources/wind.html">Wind Speed</a></li>  
+                            </ul>
+                       </li>
+                       <li><a href="Resources/compare_data.html">Comparison</a></li>
+                       <li><a href="Resources/cities.html">City Data</a></li>
+                       <li><a href="https://openweathermap.org/" target="_blank">Open Weather Map</a></li> 
+                   </ul> 
+                </div><!-- /.navbar collapse-->
+            </div>
+        </div><!-- /.container-fluid-->
+    </nav><!-- End of Nav Bar-->
+
+    <!-- Start of Analysis Presentation -->
+    <div class="container">
+        <section class="row">
+            <div class="col-lg-8 col-md-8 col-sm-6 col-xm-12">
+                <article class="description-content">
+                    <h1 class="description-header">Impact of Latitude on Weather</h1>
+                    <hr class="description-hr" />
+                    <img src="Resources/assets/images/lat_v_temp.png" alt="latitude versus temperature" id="description-image" />
+                    <p>How does latitude impact observed temperature?  In a previous project we looked at a random data set
+                        of over 500 cities across the globe to view for ourselves the results.  This data came from 
+                        OpenWeatherMap and we accessed it through their API.</p>
+                    <p>Once we had downloaded the data (making sure to not hit the API too frequently, we sliced and diced
+                        the data and plotted it utilizing Matplotlib.  Along with temperature, we looked at humidity, 
+                        cloudiness and wind speed. 
+                    </thead></p>
+                </article>
+            </div>
+    <!-- Create sidebar for navigation to pages -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12">
+        <section id="imageNav-area">
+          <div class="imageNav-content">
+            <h2 class="imageNav-header">Latitudes Impact on...</h2>
+            <hr />
+            <div id="images">
+              <div class="row" id="outer">
+                <div>
+                  <h3>Latitude vs. Max Temperature</h3>
+                  <a href="Resources/temperature.html"><img src="Resources/assets/images/lat_v_temp.png"
+                      alt="Latitude versus Max Temperature" class="imageNav-photo"></a>
+                </div>
+                <div>
+                    <h3>Latitude vs. Humidity</h3>
+                  <a href="Resources/humidity.html"><img src="Resources/assets/images/lat_v_hum.png" 
+                    alt="Latitude versus Humidity" class="imageNav-photo"></a>
+                </div>
+
+                <div>
+                    <h3>Latitude vs. Cloudiness</h3>
+                  <a href="Resources/cloudiness.html"><img src="Resources/assets/images/lat_v_cloud.png"
+                      alt="Latitude versus Cloudiness" class="imageNav-photo"></a>
+                </div>
+                <div>
+                    <h3>Latitude vs. Wind Speed</h3>
+                  <a href="Resources/wind_speed.html"><img src="Resources/assets/images/lat_v_wind.png" 
+                    alt="Latitude versus Wind Speed" class="imageNav-photo"></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- End of the navigation sidebar -->
+    </section>
+  </div>
+  <!-- End of container -->
+
+  <!-- Footer -->
+  <footer class="footer navbar-fixed-bottom">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Created by Rich Whittington for DU Bootcamp
+    </p>
+  </footer>
+  <!-- End of footer -->
+
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>
